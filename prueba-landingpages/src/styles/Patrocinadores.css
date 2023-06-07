@@ -2,13 +2,19 @@
     height: 100%;
     margin: auto;
     overflow: hidden;
+    
 }
 
-.slider-ptrocinadores .slider-track{
+h1{
+    text-align: center;
+}
+
+ .slider-track{
     display: flex;
+    overflow: hidden;
     animation: scroll 40s linear infinite;
     -webkit-animation: scroll 40s linear infinite;
-    width: calc(200px * 5);
+    width: calc(200px * 10);
 }
 
 .slider-ptrocinadores .slide-patrocinador{
