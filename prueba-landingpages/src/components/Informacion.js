@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import React, {useState} from "react";
 import '../styles/Informacion.css';
 import HackatonFoto from '../assets/hackaton.jpg';
@@ -9,11 +10,14 @@ import ArrowLeft from '../icons/ArrowLeft.svg';
 import ArrowRight from '../icons/ArrowRight.svg';
 import Image from "next/image";
 
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Informacion = () => {
   const [slideactual, setSlideactual] = useState(1);
+
+  const router = useRouter()
 
   const info = [
   {id: 1, image: HackatonFoto, title: "Hackaton virtual de Taxis libres", text: "Si eres programador, diseñador, data scientist, mercadólogo, economista, financiero o un apasionado por la innovación y la creatividad participa gratis en nuestra maratón de creación donde tenemos retos reales sobre movilidad.Podrás participar en modalidad individual, grupal o startup (Taxis Libres te asignará un equipo según tu perfil).Los equipos ganadores obtendrán $25.000 USD beneficios"},
@@ -34,7 +38,7 @@ const Informacion = () => {
 
   return (
     <section className="slider">
-      <div className="slider-container container">
+      <div className="slider-container ">
         <Image src={ArrowLeft} className="slider-arrow" id="before" onClick={prevSlide}/>
 
         <section className="slider-body" >
@@ -47,7 +51,7 @@ const Informacion = () => {
                 <p>
                   {slide.text}
                 </p>
-                <button className= {slide.id == 2 ? "button-activo" : "button-inactivo"}>Inscribirse</button>
+                <button className= {slide.id == 2 ? "button-activo" : "button-inactivo"} onClick={() => router.push("/pages")}>Inscribirse</button>
                 </div>
                 <figure>
                   <Image src={slide.image} className="slider-img"/>

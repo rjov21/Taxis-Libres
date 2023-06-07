@@ -1,11 +1,10 @@
 .formulario {
     position: relative;
     width: 60%;
-    height: 500px;
+    height: 600px;
     border-radius: 20px;
     padding: 40px;
     box-sizing: border-box;
-    background: #ecf0f3;
     box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
     margin: 0 auto;
   }
@@ -15,11 +14,29 @@
     margin-top: 30px;
   }
 
-  label, input, button {
+  .inputs label, input {
     display: block;
     width: 100%;
     padding: 0;
-    border: none;
     outline: none;
     box-sizing: border-box;
+    margin-bottom: 5px;
+  }
+
+  button{
+    border-radius: 5%;
+    background-color: yellowgreen;
+    color: black;
+    margin: 0 auto;
+    border: none;
+    display: flex;
+  }
+
+
+
+  h1{
+    margin: 0 auto;
+    color: yellowgreen;
+    text-align: center;
+    width: 100%;
   }

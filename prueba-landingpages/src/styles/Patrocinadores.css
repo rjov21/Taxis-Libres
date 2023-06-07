@@ -1,0 +1,31 @@
+.slider-ptrocinadores{
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider-ptrocinadores .slider-track{
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 5);
+}
+
+.slider-ptrocinadores .slide-patrocinador{
+    width: 200px;
+}
+
+.slider-ptrocinadores .slide-patrocinador img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(200px * 5));
+        transform: translateX(-200px * 5);
+    }
+}

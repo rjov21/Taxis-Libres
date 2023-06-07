@@ -1,0 +1,32 @@
+.container{
+    height: 100%;
+}
+
+h1{
+    text-align: center;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  /* grid-gap: 10px; */
+  grid-template-rows: 300px; 
+  align-items: center;
+}
+.one {
+  grid-row: 1/1;
+}
+.two {
+  grid-row: 2 / 1;
+}
+.three {
+  grid-row: 1 / 1;
+}
+.four {
+  grid-row: 2 / 2;
+}
+.five {
+  grid-row: 5 / 2;
+}
+.six {
+  grid-row: 6 / 2;
+}

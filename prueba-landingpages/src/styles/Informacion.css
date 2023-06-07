@@ -1,6 +1,5 @@
 .container{
     width: 100%;
-    min-height: 100vh;
     max-width: 100%;
     overflow: hidden;
 }
@@ -32,7 +31,7 @@
     grid-template-columns: 50px 1fr 50px;
     align-items: center;
     gap: 1em;
-
+    height: 700px;
 }
 
 .slider-body{
